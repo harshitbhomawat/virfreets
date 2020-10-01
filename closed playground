@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>tic tac toe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+div{
+display: inline-block;
+width:49vw;
+}
+</style>
+</head>
+<body>
+<form >
+<div>
+<center>
+<input type="text" id="p1" placeholder="player 1" required>
+<input type="color" id="col1" required></center>
+</div>
+<div>
+<center>
+<input type="text" id="p2" placeholder="player 2" required>
+<input type="color" id="col2" required></center>
+</div>
+<input type="submit" onClick="store()">
+</form>
+</body>
+<script type="text/javascript">
+var p1=document.getElementById("p1").value;
+var p2=document.getElementById("p2").value;
+var col1=document.getElementById("col1").value;
+var col2=document.getElementById("col2").value;
+localStorage.setItem("pl1",p1);
+localStorage.setItem("pl2",p2);
+localStorage.setItem("cl1",col1);
+localStorage.setItem("cl2",col2);
+console.log(localStorage.getItem("pl1");
+</script>
+</html>
